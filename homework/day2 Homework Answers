@@ -1,8 +1,10 @@
 #1'st Question
 
-list1 = ["how", "was", "your", "day?"]
-list1.reverse()
-print(list1)
+list = ["how", "was", "your", "day?"]
+list1=list[:2]
+list2=list[2:]
+print("list :", list)
+print("list3",list2+list1)
 
 
 

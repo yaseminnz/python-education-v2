@@ -1,0 +1,51 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[2]:
+
+
+class Employee():
+    empCount = 0
+    def __init__(self, n, a, language): 
+        self.name = n
+        self.age = a
+        self.language= language
+        
+       
+    def getEmpCount():
+        return Employee.empCount
+   
+    def Name(self):
+        return self.name
+   
+    def age(self):
+        return self.age
+   
+    def language(self):
+        return self.language
+ 
+
+class Manager(Employee): 
+    def __init__(self, n, a, language):
+        Employee.__init__(self, n, a, language) 
+       
+    def name(self):
+        return self.name
+    def age(self): 
+        return self.age
+    def language(self):
+        return self.language
+ 
+
+boss = Manager("Carl", 28,"English")
+
+staff = []
+
+staff.append(boss)
+staff.append(Employee("Harry", 25,"Spanish"))
+staff.append(Employee("Alice", 40, "Turkish"))
+
+for e in staff:
+        print(e.language)
+ 
+

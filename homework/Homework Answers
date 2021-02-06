@@ -57,4 +57,31 @@ for numbr in range (lower,upper+1):
                 break
         else:
             print(numbr)
+            
+
+###DAY5###
+
+class animal:
+    def __init__(self, name, animaltype):
+            self.name = name
+            self.animaltype = animaltype
+a1=animal("zebra","herbivore")
+
+class dog: 
+    def __init__(self,breed,size):
+        self.breed=breed
+        self.size=size
+d1=dog("Chihuahua","small")
+
+class cat:
+    def __init__(self,breed,color):
+        self.breed=breed
+        self.color=color
+c1=cat("British shorthair", "Grey")
+print(d1.breed)
+print(d1.size)
+print(a1.name)
+print(a1.animaltype)
+print(c1.breed)
+print(c1.color)
  
